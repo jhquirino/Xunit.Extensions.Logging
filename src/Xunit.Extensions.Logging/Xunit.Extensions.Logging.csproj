@@ -7,12 +7,16 @@
     <Description>Xunit LoggerProvider for Microsoft.Extensions.Logging to write log events to the Xunit test output.</Description>
     <IncludeBuildOutput>true</IncludeBuildOutput>
     <PackageId>Xunit.Extensions.Logging</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Title>Xunit LoggerProvider for Microsoft.Extensions.Logging</Title>
+    <PackageDescription>Xunit LoggerProvider for Microsoft.Extensions.Logging to write log events to the Xunit test output.</PackageDescription>
+    <RepositoryUrl>https://github.com/yorchideas/Xunit.Extensions.Logging</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.1.0" />
     <PackageReference Include="xunit.abstractions" Version="2.0.3" />
   </ItemGroup>
 
