@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <DocumentationFile>$(OutputPath)\Xunit.Extensions.Logging.xml</DocumentationFile>
+    <IsPackable>true</IsPackable>
+    <Description>Xunit LoggerProvider for Microsoft.Extensions.Logging to write log events to the Xunit test output.</Description>
+    <IncludeBuildOutput>true</IncludeBuildOutput>
+    <PackageId>Xunit.Extensions.Logging</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="3.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="3.0.1" />
+    <PackageReference Include="xunit.abstractions" Version="2.0.3" />
+  </ItemGroup>
+
+</Project>
