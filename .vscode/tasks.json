@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Xunit.Extensions.Logging.sln",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "test",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "test",
+                "${workspaceFolder}/test/Xunit.Extensions.Logging.UnitTests/Xunit.Extensions.Logging.UnitTests.csproj",
+                "--logger:\"console;verbosity=detailed\""
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "coverage",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "test",
+                "${workspaceFolder}/test/Xunit.Extensions.Logging.UnitTests/Xunit.Extensions.Logging.UnitTests.csproj",
+                "--logger:\"console;verbosity=detailed\"",
+                "/p:CollectCoverage=true",
+                "/p:CoverletOutputFormat=\"opencover,lcov\"",
+                "/p:CoverletOutput=${workspaceFolder}/coverage/lcov"
+            ],
+            "problemMatcher": "$msCompile"
+        }
+    ]
+}
