@@ -16,7 +16,7 @@ namespace Xunit.Extensions.Logging
     /// <summary>
     /// The provider for the <see cref="XunitLogger"/>.
     /// </summary>
-    public class XunitLoggerProvider : ILoggerProvider
+    public sealed class XunitLoggerProvider : ILoggerProvider
     {
         #region Inner members
 
